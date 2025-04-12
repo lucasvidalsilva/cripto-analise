@@ -1,0 +1,45 @@
+version: 2
+
+sources:
+  - name: postgres
+    schema: dw
+    tables: 
+      - name: bronze-criptosinfo
+        description: "Tabela bruta com as informações quantitativas das criptomoedas"
+        columns:
+          - name: "cripto"
+            description: "simbolo da cripto"
+          - name: "price"
+            description: "preço"
+          - name: "high"
+            description: "high"
+          - name: "low"
+            description: "low"
+          - name: "bid"
+            description: "bid"
+          - name: "ask"
+            description: "ask"
+          - name: "volume"
+            description: "volume"
+          - name: "quote_volume"
+            description: "quote_volume"
+          - name: "order_book_bid"
+            description: "order_book_bid"
+          - name: "order_book_ask"
+            description: "order_book_ask"
+          - name: "data_extracao"
+            description: "data da extração"
+
+      - name: bronze-criptosnews
+        description: "Tabela com dados brutos das noticias sobre criptomoedas"
+        columns:
+          - name: titulo
+            description: "titulo da noticia"
+          - name: url
+            description: "url da noticia"
+          - name: moedas
+            description: "moedas que foram ditas na noticia"
+          - name: publicado_em
+            description: "data da publicação"
+          - name: fonte
+            description: "fonte da noticia"
