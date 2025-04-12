@@ -1,0 +1,19 @@
+name: 'dw'
+version: '1.0.0'
+
+profile: 'dw'
+
+model-paths: ["models"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+clean-targets:         
+  - "dbt_packages"
+
+models:
+  dw:
+    example:
+      +materialized: table
