@@ -99,8 +99,6 @@ sources:
             description: "bid"
           - name: "ask"
             description: "ask"
-          - name: "volume"
-            description: "volume"
           - name: "quote_volume"
             description: "quote_volume"
           - name: "order_book_bid"
