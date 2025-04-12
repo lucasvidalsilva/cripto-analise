@@ -15,5 +15,4 @@ clean-targets:
 
 models:
   dw:
-    example:
-      +materialized: table
+    +materialized: table
